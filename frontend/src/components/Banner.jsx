@@ -3,7 +3,7 @@ import banImage from '../assets/ban.jpg';
 
 const Banner = () => {
   return (
-    <section className="relative flex flex-row justify-evenly pl-10 pt-[180px] h-screen">
+    <section className="relative flex flex-row justify-evenly pl-10 pt-[180px] h-[400px] z-10">
     
       <div className="relative container w-3/4 text-center">
         <h1 className="text-[45px] font-bold mb-4 text-black">Welcome to Skiller E-Learning Platform</h1>
