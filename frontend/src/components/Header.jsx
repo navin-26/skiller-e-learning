@@ -4,7 +4,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="bg-white p-4  drop-shadow-xl shadow-slate-950 font-semibold">
+    <header className="bg-white p-4  drop-shadow-xl shadow-slate-950 font-bold">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <Link to="/" className="text-2xl font-bold">SKILLER</Link>
