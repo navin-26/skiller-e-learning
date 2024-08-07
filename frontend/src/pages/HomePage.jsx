@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import About from '../components/About';
+import Features from '../components/Features';
 import Footer from '../components/Footer';
 
 const HomePage = () => {
@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className="">
       <Header />
         <Banner />
-        <About />
+        <Features />
       <Footer />
     </div>
   );

@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import CategoriesDropdown from './CategoriesDropdown';
 
 const Header = () => {
   return (
-    <header className="bg-white p-4  drop-shadow-xl shadow-slate-950 font-bold">
+    <header className="bg-white p-4 shadow-xl font-bold">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <Link to="/" className="text-2xl font-bold">SKILLER</Link>
           <input
             type="text"
             placeholder="Search"
-            className="p-2 border border-black  w-[400px] rounded-full"
+            className="p-2 border border-black w-[400px] rounded-full"
           />
-          <button className="p-2 text-black hover:text-teal-600">Categories</button>
+          <CategoriesDropdown />
           <button className="p-2 text-black hover:text-teal-600">Teach on SKILLER</button>
         </div>
         <div className="flex items-center space-x-4">
