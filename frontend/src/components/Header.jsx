@@ -1,7 +1,10 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import CategoriesDropdown from './CategoriesDropdown';
+
+
+
 
 const Header = () => {
   return (
@@ -15,7 +18,10 @@ const Header = () => {
             className="p-2 border border-black w-[400px] rounded-full"
           />
           <CategoriesDropdown />
-          <button className="p-2 text-black hover:text-teal-600">Teach on SKILLER</button>
+          <Link to = "/Instructor" > 
+          <button>Teach on SKILLER</button>
+          </Link>
+          
         </div>
         <div className="flex items-center space-x-4">
           <button className="p-2">
