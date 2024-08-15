@@ -1,8 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    localStorage.setItem('redirectAfterLogin', window.location.pathname);
+    navigate('/signin');
+  }
+
+  const handleRegister = () => {
+    localStorage.setItem('redirectAfterRegister', window.location.pathname);
+    navigate('/signup');
+  }
+
   return (
     <header className="bg-white p-4  drop-shadow-xl shadow-slate-950 font-bold">
       <div className="container mx-auto flex justify-between items-center">
@@ -20,8 +32,8 @@ const Header = () => {
           <button className="p-2">
             <FaShoppingCart className="w-6 h-6 text-black hover:text-teal-600" />
           </button>
-          <button className="p-2 text-black hover:text-teal-600">Login</button>
-          <button className="p-2 bg-black text-white rounded-lg hover:bg-white hover:text-black border-2 border-black">Sign Up</button>
+          <button onClick={handleLogin} className="p-2 text-black hover:text-teal-600">Login</button>
+          <button onClick={handleRegister} className="p-2 bg-black text-white rounded-lg hover:bg-white hover:text-black border-2 border-black">Sign Up</button>
         </div>
       </div>
     </header>
