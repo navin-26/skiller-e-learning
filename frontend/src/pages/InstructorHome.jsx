@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import BannerTeach from '../components/BannerTeach';
-import About from '../components/about'
+import InstructorBanner from '../components/InstructorBanner';
 
 import Footer from '../components/Footer';
 
@@ -9,8 +8,7 @@ const InstructorHome = () => {
   return (
     <div className="">
       <Header />
-        <BannerTeach />
-        <About />
+        <InstructorBanner />
       <Footer />
     </div>
   );
